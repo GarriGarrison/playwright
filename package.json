@@ -1,0 +1,36 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "e2e testing UI",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx playwright test",
+    "report": "allure serve",
+    "pw": "playwright test",
+    "pw:debug": "PWDEBUG=1 npm run pw",
+    "pw:ui": "playwright test --ui",
+    "pw:view": "playwright test --headed",
+    "pw:visual:update": "npm run pw -- --update-snapshots",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarriGarrison/playwright.git"
+  },
+  "keywords": [],
+  "author": "Garrison",
+  "engines": {
+    "node": ">= 16.14.0",
+    "npm": ">= 7.0.0",
+    "yarn": "^1.22.19"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GarriGarrison/playwright/issues"
+  },
+  "homepage": "https://github.com/GarriGarrison/playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "allure-playwright": "^3.2.0"
+  }
+}
