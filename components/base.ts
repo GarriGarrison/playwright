@@ -2,6 +2,7 @@ import type { Locator, Page } from '@playwright/test'
 import { expect, test } from '../fixture'
 import { capitalize } from '../utils'
 
+
 interface ComponentProps {
   page: Page
   name: string

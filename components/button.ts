@@ -1,6 +1,7 @@
 import { expect, test } from '../fixture'
 import { BaseComponent } from './base'
 
+
 export class Button extends BaseComponent {
   override get typeOf(): string {
     return 'кнопка'

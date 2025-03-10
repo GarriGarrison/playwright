@@ -1,5 +1,6 @@
 import type { Page } from '@playwright/test'
 
+
 export abstract class BaseLocators {
   readonly page: Page
 

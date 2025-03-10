@@ -1,6 +1,7 @@
 import { expect, test } from '../fixture'
 import { BaseComponent } from './base'
 
+
 export class Input extends BaseComponent {
   override get typeOf(): string {
     return 'поле'
