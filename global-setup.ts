@@ -1,7 +1,7 @@
 import path from 'node:path'
 import { chromium, type FullConfig } from '@playwright/test'
 
-import { environment } from './shared/environment'
+import { environment } from './utils'
 
 const authFile = path.join(__dirname, './.auth/user.json')
 
