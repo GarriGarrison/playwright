@@ -4,7 +4,6 @@ import { Button, Link } from '../../../components'
 import { SearchModal } from '../modals/search.modal'
 import { NavbarLocators } from './navbar.locator'
 
-
 export class Navbar {
   readonly searchModal: SearchModal
 

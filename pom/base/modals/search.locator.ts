@@ -1,6 +1,5 @@
-import type { Locator } from '@playwright/test';
-import { BaseLocators } from '../../base/base.locators'
-
+import type { Locator } from '@playwright/test'
+import { BaseLocators } from '../base.locators'
 
 export class SearchModalLocators extends BaseLocators {
   get title(): Locator {

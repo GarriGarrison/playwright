@@ -1,20 +1,23 @@
 import { test as base } from '@playwright/test'
+import { HomePage, LanguagesPage } from './pom'
+
 
 type Fixture = {
   // mockManager: MockManager
 
-  // ordersPage: OrdersPage
-  // postsPage: PostsPage
+  homePage: HomePage
+  languagesPage: LanguagesPage
 }
 
 export const test = base.extend<Fixture>({
   // mockManager: createMockManagerFixture(),
-  // ordersPage: async ({ page }, use) => {
-  // await use(new OrdersPage(page))
-  // },
-  // postsPage: async ({ page }, use) => {
-  // await use(new PostsPage(page))
-  // },
+  
+  homePage: async ({ page }, use) => {
+    await use(new HomePage(page))
+  },
+  languagesPage: async ({ page }, use) => {
+    await use (new LanguagesPage(page))
+  }
 })
 
 export { expect } from '@playwright/test'
