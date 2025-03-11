@@ -17,7 +17,7 @@ export const test = base.extend<Fixture>({
     await use(new HomePage(page))
   },
   languagesPage: async ({ page }, use) => {
-    await use (new LanguagesPage(page))
+    await use(new LanguagesPage(page))
   }
 })
 
